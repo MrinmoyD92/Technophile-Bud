@@ -1,4 +1,4 @@
-# Technophile-Bud
+# Task_1; Part_A & Part_B
 
 It is a small project based on Python.
 
