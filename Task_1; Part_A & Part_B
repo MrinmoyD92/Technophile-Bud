@@ -1,0 +1,33 @@
+#Part_A
+
+print("Shopping List")
+shopping_list = ["Mixer grinder", "Wheat", "Oats", "Onions", "Cucumber", "Whole wheat bread"]
+
+print("Add the list of shopping items when prompted.")
+new_addition = str(input("Please enter the list of shopping item: "))
+shopping_list.append(new_addition)
+
+print("The item", new_addition, "is succesfully added to the list.")
+while True:
+    print('Press Enter DONE in caps to log out of the app')
+    choice = input('Please type DONE to quit: ')
+    if choice == 'DONE':
+        print('\nYou typed', choice)
+        print('Quitting program...')
+        break
+    else:
+      print('\nStill running...\n')
+      
+print("Your list of items:", shopping_list)
+
+
+#Part_B
+
+print("Let's play guess the number!")
+import random
+secret_number = random.randint(1,10)
+guess_number = int(input("Please guess any number between 1 to 10: "))
+if guess_number == secret_number:
+  print("You win and computer lose")
+else:
+  print("You lose and computer wins")
